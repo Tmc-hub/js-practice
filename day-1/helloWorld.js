@@ -81,3 +81,101 @@ const arrayOfObjects = [
 ];
 // print 'kaiser'
 console.log(arrayOfObjects[2]);
+
+const arrayOfObject = [
+  { name: "phil", age: 40 },
+  { name: "marco", age: 20 },
+  {
+    name: "kaiser",
+    age: 16,
+  },
+  {
+    name: "miran",
+    age: 23,
+  },
+];
+console.log(arrayOfObject[0].age);
+console.log(arrayOfObject[0]);
+
+const arrayOfObjects2 = [
+  { name: "phil", hobbies: ["coding", "cycling", "singing"], age: 40 },
+  { name: "marco", hobbies: ["coding", "cycling", "playing game"], age: 20 },
+  {
+    name: "kaiser",
+    hobbies: ["coding", "playing gaming", "music"],
+    age: 16,
+  },
+  {
+    name: "miran",
+    hobbies: ["coding", "running"],
+    age: 35,
+  },
+];
+console.log(arrayOfObjects2[3].hobbies);
+console.log(arrayOfObjects2[3]);
+console.log(arrayOfObjects2[0].hobbies[0]);
+console.log(arrayOfObjects2[2].hobbies[hobbies.length - 1]);
+console.log(arrayOfObjects2[3].hobbies[1]);
+
+// let firstname1 = "Marco";
+// if (firstname1 === "Marco") {
+//   firstname1 = "Kaiser";
+// }
+// if (firstname1 === "Kaiser") {
+//   firstname1 = "Miran";
+// }
+// console.log("first name", firstname1);
+
+let score = 57;
+
+if (score > 80) {
+  console.log("I'm doing great");
+} else {
+  console.log("I need help");
+}
+
+function checkingScore(score) {
+  if (score < 80) {
+    return "I need some help";
+  }
+}
+const myscore = console.log(checkingScore(score));
+
+let lunch = "Sandwhich";
+
+if (lunch === "Noodles") {
+  console.log("I have noodles for lunch");
+} else {
+  console.log("I don't like my lunch");
+}
+
+let number = 14;
+if (number % 2 === 0) {
+  console.log("It is even");
+} else {
+  console.log("It is odd");
+}
+
+function oddEven(number) {
+  if (number % 2 === 0) {
+    return "Its even";
+  } else {
+    return "Its odd";
+  }
+}
+const oddEvenResult = console.log(oddEven(number));
+
+const philStudent = arrayOfObjects2[0];
+const miranStudent = arrayOfObjects2[3];
+
+if (arrayOfObjects2[0].age < 30 || arrayOfObjects2[3].age > 20) {
+  console.log(arrayOfObjects2[0].name, arrayOfObjects2[3].name);
+} else {
+  console.log("Phil is over 30 or Miran is under 20");
+}
+
+if (arrayOfObjects2[1].age < 30 && arrayOfObjects2[2] > 20) {
+  console.log(arrayOfObjects2[1].name, arrayOfObjects2[2].name);
+} else {
+  console.log("either marco is older than 30 or kaiser is younger than 20");
+}
