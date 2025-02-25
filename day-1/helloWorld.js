@@ -108,7 +108,7 @@ const arrayOfObjects2 = [
   {
     name: "miran",
     hobbies: ["coding", "running"],
-    age: 35,
+    age: 19,
   },
 ];
 console.log(arrayOfObjects2[3].hobbies);
