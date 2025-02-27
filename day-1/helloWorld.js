@@ -179,3 +179,33 @@ if (arrayOfObjects2[1].age < 30 && arrayOfObjects2[2] > 20) {
 } else {
   console.log("either marco is older than 30 or kaiser is younger than 20");
 }
+
+const foods = [
+  {
+    name: "hotdog",
+    categories: ["meat", "fast food", "quick eats"],
+    price: 100,
+  },
+  {
+    name: "cheeseburger",
+    categories: ["meat", "fast food", "quick eats"],
+    price: 300,
+  },
+  {
+    name: "french fries",
+    categories: ["vegetarian", "fast food", "quick eats"],
+    price: 100,
+  },
+  {
+    name: "cola",
+    categories: ["drink", "soda", "quick eats"],
+    price: 100,
+  },
+];
+
+// problem 1:  print the 2nd category for french fries
+// problem 2:  print the price for cola.  price is in cents
+// problem 3:  Print "A cheeseburger is $3"
+console.log(foods[2].categories[1]);
+console.log(foods[3].price);
+console.log("A", foods[1].name, "is", "$" + foods[1].price / 100);
