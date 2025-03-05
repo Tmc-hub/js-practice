@@ -1,0 +1,48 @@
+/* 전체 배경 색상 변경 */
+body {
+  background-color: lightgray;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Heading style */
+h1 {
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+
+#my-favorite-foods-header {
+  color: blue;
+}
+
+#my-hobbies-header {
+  color: teal;
+}
+
+/* paragraph style */
+p {
+  font-size: 18px;
+  color: darkgreen;
+  text-align: center;
+}
+/* unordered list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: lightblue;
+  margin: 5px;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#hobby-list > li {
+  background: lightgreen;
+}
+
+#hobbies-button {
+  color: lightblue;
+}

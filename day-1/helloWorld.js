@@ -209,3 +209,31 @@ const foods = [
 console.log(foods[2].categories[1]);
 console.log(foods[3].price);
 console.log("A", foods[1].name, "is", "$" + foods[1].price / 100);
+
+let score2 = 85;
+
+if (score2 >= 90) {
+  console.log("Grade: A");
+} else if (score2 >= 80) {
+  console.log("Grade: B");
+} else if (score2 >= 70) console.log("Grade: C");
+else {
+  console.log("Grade: D");
+}
+
+// using a for loop, print `foo` if the number is divisible by 2, print `bar` if
+// number is divisible by 3 and print `foobar` if number is divisbile by 2 && 3
+const numbers1 = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+];
+
+for (let i = 0; i < numbers1.length; i++)
+  if (numbers1[i] % 2 === 0 && numbers1[i] % 3 === 0) {
+    console.log(numbers1[i], "foobar");
+  } else if (numbers1[i] % 2 === 0) {
+    console.log(numbers1[i], "foo");
+  } else if (numbers1[i] % 3 === 0) {
+    console.log(numbers1[i], "bar");
+  } else {
+    console.log("This is impossible");
+  }

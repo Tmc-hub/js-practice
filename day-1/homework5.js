@@ -1,18 +1,24 @@
 for (let i = 1; i <= 10; i++) {
-  if (i <= 10) {
-    console.log(i);
-  }
+  // if (i <= 10) {
+  console.log(i);
 }
 
-for (let i = 1; i <= 20; i++) {
+for (let i = 2; i <= 20; i++) {
   if (i % 2 === 0) {
     console.log(i);
   }
 }
 
 for (let i = 10; i >= 1; i--) {
-  if (i >= 1) {
-    console.log(i);
+  // if (i >= 1) {
+  console.log(i);
+}
+
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) {
+    console.log(i, "This is even");
+  } else {
+    console.log(i, "This is odd");
   }
 }
 
@@ -63,4 +69,36 @@ for (let i = myGarage.length - 1; i >= 0; i--) {
 
 for (let i = myGarage.length - 1; i >= 0; i--) {
   console.log(myGarage[i].brand);
+}
+
+let count = 0;
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) {
+    count++;
+  }
+}
+console.log(count);
+
+let carCount = 0;
+for (let i = 0; i < myGarage.length; i++) {
+  if (myGarage[i].year > 2022) {
+    carCount++;
+  }
+}
+console.log(carCount);
+
+let countCar = 0;
+for (let i = 0; i < myGarage.length; i++) {
+  if (myGarage[i].year < 2022) {
+    countCar++;
+    console.log(myGarage[i].brand, myGarage[i].model, countCar);
+  }
+}
+
+let carCounter = 0;
+for (let i = 0; i < myGarage.length; i++) {
+  if (myGarage[i].year === 2022) {
+    carCounter++;
+    console.log(myGarage[i].brand, myGarage[i].model, carCounter);
+  }
 }

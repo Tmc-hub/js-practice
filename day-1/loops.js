@@ -105,3 +105,59 @@ for (let i = 0; i < students.length; i++) {
 }
 
 // using a for loop, print only those that in the coding class
+
+let sum = 0;
+for (let i = 1; i <= 5; i++) {
+  //sum += 1
+  sum = sum + i;
+  //0 + 1
+  //1 + 2
+  //3 + 3
+  //6 + 4
+  //10 + 5
+}
+console.log(sum);
+
+let sum1 = 0;
+let evenCount = 0;
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) {
+    sum1 = sum1 + i;
+    evenCount++;
+  }
+}
+console.log(sum1, evenCount);
+
+const numArr = [3, 7, 2, 9, 5];
+let sum2 = 0;
+for (let i = 0; i < numArr.length; i++) {
+  sum2 = sum2 + numArr[i];
+}
+console.log(sum2);
+
+const numArr2 = [1, 7, 2, 9, 5, 5, 6, 7, 4, 4, 6, 7, 4, 3, 2, 5, 9, 9];
+let sum3 = 0;
+for (let i = 0; i < numArr2.length; i++) {
+  if (numArr2[i] % 2 === 1) {
+    sum3 = sum3 + numArr2[i];
+  }
+}
+console.log(sum3);
+
+const arrMax = [3, 7, 2, 9, 5];
+let largestNum = 0;
+for (let i = 0; i < arrMax.length; i++) {
+  if (arrMax[i] > largestNum) {
+    largestNum = arrMax[i];
+  }
+}
+console.log(largestNum);
+
+const arrSmall = [1, 3, 2, 7, 5, 8, 9];
+let smallestNum = 10;
+for (let i = 0; i < arrSmall.length; i++) {
+  if (smallestNum > arrSmall[i]) {
+    smallestNum = arrSmall[i];
+  }
+}
+console.log(smallestNum);
